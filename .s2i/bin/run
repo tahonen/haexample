@@ -1,0 +1,4 @@
+#!/bin/bash
+$JBOSS_HOME/bin/add-user.sh -u tero1 -a --realm ApplicationRealm  -p "foobar1" --role app,user,foobar
+$JBOSS_HOME/bin/add-user.sh -u tero2 -a --realm ApplicationRealm  -p "foobar" --role app,user,foobar
+exec $JBOSS_HOME/bin/openshift-launch.sh

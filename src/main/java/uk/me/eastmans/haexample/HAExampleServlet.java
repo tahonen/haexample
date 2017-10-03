@@ -27,7 +27,7 @@ public class HAExampleServlet  extends GenericServlet {
             HttpServletRequest httpReq = (HttpServletRequest) req;
             HttpSession session = httpReq.getSession();
             Integer count = incrementCount( session );
-            message = "From session " + session.getId() + ", for the " + count + " TIME ON POD " + message+"!!!!";
+            message = "From session " + session.getId() + ", for the " + count + " time on pod " + message+"!!!!";
         }
         res.getWriter().println(message);
     }

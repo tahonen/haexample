@@ -87,7 +87,7 @@
         <subsystem xmlns="urn:jboss:domain:logging:3.0">
             <periodic-rotating-file-handler name="FILE" autoflush="true">
                 <formatter>
-                    <named-formatter name="PATTERN"/>
+                    <named-formatter name="COLOR-PATTERN"/>
                 </formatter>
                 <file relative-to="jboss.server.log.dir" path="server.log"/>
                 <suffix value=".yyyy-MM-dd"/>
